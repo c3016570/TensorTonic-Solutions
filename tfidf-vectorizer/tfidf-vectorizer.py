@@ -8,7 +8,7 @@ def tfidf_vectorizer(documents):
     Returns tuple of (tfidf_matrix, vocabulary).
     """
     if not documents:
-        return np.ndarray([]), []
+        return np.array([]), []
 
     # build vocabulary
     vocabulary = sorted(set(
